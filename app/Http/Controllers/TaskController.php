@@ -63,7 +63,7 @@ class TaskController extends Controller
     // Handle file upload
     if ($request->hasFile('file')) {
         $file = $request->file('file');
-        $path = $file->store('public/files');
+        $path = $file->store();
         $validatedData['file_path'] = $path;
     }
 

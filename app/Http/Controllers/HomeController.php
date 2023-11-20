@@ -33,7 +33,7 @@ class HomeController extends Controller
     {
          $notifications = auth()->user()->unreadNotifications;
          $projects = Project::all();
-        $organizations = Organization::all();
+        $organizations = Organization::count();
         $users = User::all();
         $departments=Department::all();
         $tasks = Task::all();
@@ -42,7 +42,7 @@ class HomeController extends Controller
         'projects'=>$projects,'tasks'=>$tasks,'notifications'=>$notifications]);
 
     }
-    
+
     public function markNotification(Request $request)
 {
     auth()->user()

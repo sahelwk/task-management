@@ -64,7 +64,7 @@
             </div>
 
             <div class="">
-                {{ $organizations->links() }}
+                {{ $organizations->links('pagination::bootstrap-5') }}
             </div>
         </div>
     </div>

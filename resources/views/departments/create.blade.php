@@ -1,4 +1,4 @@
-  
+
 
 @extends('layouts.app')
 
@@ -22,9 +22,10 @@
     <!-- Assuming you have a foreign key 'org_id' in the 'departments' table -->
     <div class="form-group">
       <label for="org_id" class="text-dark">Organization Name</label>
-     
+
 
       <select name="org_id"class="form-control">
+        <option selected>Select Department</option>
         @foreach ($organizations as $organization)
 
         <option value="{{$organization->id}}">{{$organization->name}}</option>

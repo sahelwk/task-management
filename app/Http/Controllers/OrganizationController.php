@@ -27,7 +27,7 @@ class OrganizationController extends Controller
  $organizations = Organization::when($search, function ($query, $search) {
         return $query->where('name', 'like', "%$search%")
             ->orWhere('description', 'like', "%$search%");
-    })->paginate(10);
+    })->paginate(2);
 
           return view('organizations.index',compact('organizations'));
 
@@ -62,7 +62,7 @@ class OrganizationController extends Controller
     public function show(Organization $organization)
     {
 
-        
+
         return view('organizations.show', compact('organization'));
 
     }

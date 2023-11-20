@@ -89,7 +89,8 @@ Route::post('/task/store', [TaskController::class, 'store'])->name('tasks.store'
 //setting
 Route::get('/setting/security', [SettingController::class, 'index'])->name('settings.security');
 Route::get('/setting/preference', [SettingController::class, 'index'])->name('settings.preferences');
-Route::get('/setting/profile', [SettingController::class, 'index'])->name('settings.profile');
+Route::get('/setting/profile', [SettingController::class, 'index'])->name('settings.p
+rofile');
  //permissions
 
 Route::get('permissions', [PermissionController::class, 'index'])->name('permissions.index');

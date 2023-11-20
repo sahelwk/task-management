@@ -6,14 +6,25 @@
 <div class="container pb-5 ">
   <h1 class="text-center">Organizations Details</h1>
 
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title"><strong>Organization ID:</strong>-----------------------------------------------------------><em class="badge bg-pill bg-info text-light"style="font-size: 16px; font-weight: lighter"> {{ $organization->id }}</em></h5>
-      <p class="card-text"><strong>Organization Name:</strong>--------------------------------------------------------> <em class="badge bg-pill bg-info text-light"style="font-size: 16px; font-weight: lighter"> {{ $organization->name }}</em></p>
-      <p class="card-text"><strong> Organization Descriptions:</strong>----------------------------------------------------------><em class="badge bg-pill bg-info text-light"style="font-size: 16px; font-weight: lighter"> {{ $organization->description }}</em></p>
+<table class="table table-bordered">
 
-    </div>
-  </div>
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+</thead>
+
+<tbody>
+<tr>
+<td>{{$organization->id}}</td>
+<td>{{$organization->name}}</td>
+<td>{{$organization->description}}</td>
+</tr>
+</tbody>
+</table>
+
 
 
 </div>

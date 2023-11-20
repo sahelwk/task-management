@@ -44,7 +44,7 @@
 
                         <div class="card-body">
                             <i class="fa-solid fa-globe fa-3x mb-3"></i>
-                            <h5 class="card-title">{{$organizations->count('id')}}</h5>
+                            <h5 class="card-title">{{$organizations}}</h5>
                             <h1 class="card-text"> Organization</h1>
                         </div>
 
